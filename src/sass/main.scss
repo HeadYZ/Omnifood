@@ -26,6 +26,7 @@
 
 	Tints:
 	#fdf2e9;
+	#fae5d3;
 	Shades:
 	#cf711f;
 	Accents: 
@@ -62,11 +63,8 @@ body {
 	background-color: #fdf2e9;
 	padding: 4.8rem 0 9.6rem 0;
 	.hero {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
 		align-items: center;
-		gap: 9.6rem;
-		padding: 0 3.2rem;
+		max-width: 130rem;
 		&__img {
 			width: 100%;
 		}
@@ -154,5 +152,81 @@ body {
 	&__nav-list-link.nav-cta:hover,
 	&__nav-list-link.nav-cta:active {
 		background-color: #cf711f;
+	}
+}
+
+//////////////// SECTION HOW IT WORKS
+/////////////////////////////////////
+/// //////////////////////////////////////
+
+.how {
+	padding: 9.6rem 0;
+	&__heading {
+		margin-bottom: 9.6rem;
+		font-weight: 700;
+		font-size: 4.4rem;
+		letter-spacing: -0.5px;
+		line-height: 1.2;
+		color: #333;
+	}
+	&__subheading {
+		display: block;
+		font-size: 1.6rem;
+		font-weight: 500;
+		color: #cf711f;
+		text-transform: uppercase;
+		margin-bottom: 1.6rem;
+		letter-spacing: 0.75px;
+	}
+	&__step-number {
+		margin-bottom: 1.2rem;
+		font-size: 8.6rem;
+		color: #ddd;
+		font-weight: 600;
+	}
+	&__heading-tertiary {
+		margin-bottom: 3.2rem;
+		font-size: 3rem;
+		color: #333;
+		font-weight: 700;
+		letter-spacing: -0.5px;
+		line-height: 1.2;
+	}
+	&__step-description {
+		font-size: 1.8rem;
+		line-height: 1.8;
+	}
+
+	&__step-img-box {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__step-img-box::before,
+	&__step-img-box::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: block;
+		border-radius: 50%;
+		z-index: -2;
+	}
+	&__step-img-box::before {
+		width: 60%;
+		padding-bottom: 60%;
+		background-color: #fdf2e9;
+	}
+	&__step-img-box::after {
+		width: 45%;
+		padding-bottom: 45%;
+		background-color: #fae5d3;
+		z-index: -1;
+	}
+
+	&__step-img {
+		width: 35%;
 	}
 }

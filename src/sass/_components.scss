@@ -1,6 +1,7 @@
 .container {
-	max-width: 130rem;
+	max-width: 120rem;
 	margin: 0 auto;
+	padding: 0.32rem;
 }
 
 .btn:link,
@@ -39,4 +40,21 @@
 
 .margin-right-sm {
 	margin-right: 1.6rem;
+}
+
+.grid {
+	display: grid;
+	gap: 9.6rem 6.4rem;
+}
+
+.grid--2-cols {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--center-v {
+	align-items: center;
 }
