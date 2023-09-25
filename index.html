@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d11a937149.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./src/sass/main.scss">
+
     <script type='module' defer src="./src/js/main.js"></script>
 </head>
 
@@ -133,6 +135,136 @@
             </div>
         </div>
     </section>
+
+    <section class="meals">
+        <div class="container center-text">
+            <span class="meals__subheading">Meals</span>
+            <h2 class="meals__heading">
+                Omnifood AI chooses from 5,000+ recipes
+            </h2>
+        </div>
+
+        <div class="container grid grid--3-cols margin-bottom-md">
+            <div class="meals__meal">
+                <img src="./src/img/meals/meal-1.jpg" class="meals__meal-img" alt="Japanese Gyozas" />
+                <div class="meals__meal-content">
+                    <div class="meals__meal-tags">
+                        <span class="meals__tag meals__tag--vegetarian">Vegetarian</span>
+                    </div>
+                    <p class="meals__meal-title">Japanese Gyozas</p>
+                    <ul class="meals__meal-attributes">
+                        <li class="meals__meal-attribute">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="meals__meal-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
+                            </svg>
+
+                            <span><strong>650</strong> calories</span>
+                        </li>
+                        <li class="meals__meal-attribute">
+                            <i class="fa-solid fa-utensils meals__meal-icon"></i>
+                            <span>NutriScore &reg; <strong>74</strong></span>
+                        </li>
+                        <li class="meals__meal-attribute">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="meals__meal-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                            </svg>
+                            <span><strong>4.9</strong> rating (537)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="meals__meal">
+                <img src="./src/img/meals/meal-2.jpg" class="meals__meal-img" alt="Avocado Salad" />
+                <div class="meals__meal-content">
+                    <div class="meals__meal-tags">
+                        <span class="meals__tag meals__tag--vegan">Vegan</span>
+                        <span class="meals__tag meals__tag--paleo">Paleo</span>
+                    </div>
+                    <p class="meals__meal-title">Avocado Salad</p>
+                    <ul class="meals__meal-attributes">
+                        <li class="meals__meal-attribute">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="meals__meal-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
+                            </svg>
+
+                            <span><strong>400</strong> calories</span>
+                        </li>
+                        <li class="meals__meal-attribute">
+                            <i class="fa-solid fa-utensils meals__meal-icon"></i>
+                            <span>NutriScore &reg; <strong>92</strong></span>
+                        </li>
+                        <li class="meals__meal-attribute">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="meals__meal-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                            </svg>
+
+                            <span><strong>4.8</strong> rating (441)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="meals__diets">
+                <h3 class="meals__heading-tertiary">Works with any diet:</h3>
+                <ul class="meals__list">
+                    <li class="meals__list-item">
+                        <i class="fa-solid fa-check meals__list-icon"></i>
+                        <span>Vegetarian</span>
+                    </li>
+                    <li class="meals__list-item">
+                        <i class="fa-solid fa-check meals__list-icon"></i>
+                        <span>Vegan</span>
+                    </li>
+                    <li class="meals__list-item">
+                        <i class="fa-solid fa-check meals__list-icon"></i>
+                        <span>Pescatarian</span>
+                    </li>
+                    <li class="meals__list-item">
+                        <i class="fa-solid fa-check meals__list-icon"></i>
+                        <span>Gluten-free</span>
+                    </li>
+                    <li class="meals__list-item">
+                        <i class="fa-solid fa-check meals__list-icon"></i>
+                        <span>Lactose-free</span>
+                    </li>
+                    <li class="meals__list-item">
+                        <i class="fa-solid fa-check meals__list-icon"></i>
+                        <span>Keto</span>
+                    </li>
+                    <li class="meals__list-item">
+                        <i class="fa-solid fa-check meals__list-icon"></i>
+                        <span>Paleo</span>
+                    </li>
+                    <li class="meals__list-item">
+                        <i class="fa-solid fa-check meals__list-icon"></i>
+                        <span>Low FODMAP</span>
+                    </li>
+                    <li class="meals__list-item">
+                        <i class="fa-solid fa-check meals__list-icon"></i>
+                        <span>Kid-friendly</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container meals__all-recipes">
+            <a href="#" class="meals__link">See all recipes &rarr;</a>
+        </div>
+    </section>
+
 </body>
 
 </html>
